@@ -7,7 +7,11 @@
 
 int main(void)
 {
-    /* Scrieti solutia aici */
-
-    return 0;
+    int opt;
+    printf("1. Creare fisier\n");
+    printf("2. Sortare fisier\n");
+    printf("3. Afisare fisier\n");
+    printf("0. Iesire\n");
+    scanf("%d", &opt);
+    return opt;
 }
