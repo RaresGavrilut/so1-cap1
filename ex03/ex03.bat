@@ -5,4 +5,5 @@ REM fisierele care au extensia identica cu cea primita ca
 REM parametru.
 
 REM Scrieti solutia mai jos:
+dir *.%1
 
