@@ -6,4 +6,7 @@ REM primita ca parametru. Fisierul de comenzi sa accepte mai
 REM multe extensii deodata.
 
 REM Scrieti solutia mai jos:
+for %%a in (%*) do (
+    del *%%a
+)
 
