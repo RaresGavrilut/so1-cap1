@@ -9,4 +9,30 @@ REM Daca valoarea e diferita de 0, apeleaza din nou MENIU.
 REM La final afiseaza directorul curent si revine in directorul parinte.
 
 REM Scrieti solutia mai jos:
+md %1
+cd %1
+
+:bucla
+call meniu
+if errorlevel 3 goto op3
+if errorlevel 2 goto op2
+if errorlevel 1 goto op1
+if errorlevel 0 goto final
+goto bucla
+
+:op1
+copy con %2.txt
+goto bucla
+
+:op2
+sort < %2.txt > %2.srt
+goto bucla
+
+:op3
+type %2.srt
+goto bucla
+
+:final
+cd
+cd ..
 
